@@ -2,7 +2,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.new("-05:00")
+    time = Time.local
     
     resp.write time
     
