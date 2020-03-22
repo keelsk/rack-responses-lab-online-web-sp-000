@@ -1,7 +1,7 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-    
+    tz = timezone('“America/New_York”')
     time = Time.now 
     
     resp.write time
