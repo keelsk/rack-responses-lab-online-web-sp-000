@@ -3,6 +3,7 @@ class Application
     resp = Rack::Response.new
 
     time = Time.new
+    time = time + Time.zone_offset('EST')
     
     resp.write time.zone
     
