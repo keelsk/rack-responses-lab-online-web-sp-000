@@ -2,8 +2,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.now.utc
-    time = time + Time.zone_offset('EST')
+    time = Time.now
     
     
     if time.hour >= 12
