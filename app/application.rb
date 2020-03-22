@@ -5,7 +5,6 @@ class Application
     time = Time.now.utc
     time = time + Time.zone_offset('EST')
     
-    resp.write time
     
     if time.hour >= 12
       resp.write "Good Afternoon!"
