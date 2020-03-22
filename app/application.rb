@@ -5,7 +5,7 @@ class Application
     time = Time.new
     time = time + Time.zone_offset('EST')
     
-    resp.write time.zone
+    resp.write time
     
     if time.hour >= 12
       resp.write "Good Afternoon!"
